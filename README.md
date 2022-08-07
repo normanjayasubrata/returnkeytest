@@ -40,7 +40,7 @@ Before Started make sure these tech stack installed in your computer:
 #### Create Token 
 
 ```http
-  POST /pending/returns
+POST /pending/returns
 ```
 
 | Body | Type     | Description                |
@@ -51,7 +51,7 @@ Before Started make sure these tech stack installed in your computer:
 #### Create Return
 
 ```http
-  POST /returns
+POST /returns
 ```
 
 | Body | Type     | Description                       |
@@ -63,12 +63,12 @@ Before Started make sure these tech stack installed in your computer:
 #### Get Return by ID
 
 ```http
-  GET /returns/:id
+GET /returns/:id
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-|    id  | `integer` | **Required**. use token from `/pending/returns` |
+|    id  | `integer` |  |
 
 
 #### Set QC Status
@@ -78,7 +78,7 @@ PUT /returns/:id/items/:itemId/qc/status
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-|    id  | `integer` | **Required**. use token from `/pending/returns` |
+|    id  | `integer` |  |
 |    itemId  | `string` |  SKU's ID|
 
 | Body | Type     | Description                       |
